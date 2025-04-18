@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block title %}Dashboard | SentriSIEM{% endblock %}
 
 {% block content %}
@@ -17,29 +16,28 @@
         border-radius: 8px;
         text-align: center;
         width: 250px;
-        box-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
     }
     .card h3 {
         color: #ff4d4d;
-        margin-bottom: 0.5rem;
-    }
-    .card p {
-        font-size: 1.8rem;
-        font-weight: bold;
     }
     .charts-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 2rem;
         margin-top: 2rem;
     }
     .chart {
-        width: 45%;
-        min-width: 300px;
         background: rgba(0, 0, 0, 0.8);
         padding: 1rem;
         border-radius: 8px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+    .chart img {
+        max-width: 100%;
+        border-radius: 4px;
     }
 </style>
 
@@ -61,47 +59,28 @@
 
 <div class="charts-container">
     <div class="chart">
-        <h3>Log Activity</h3>
-        <div id="log-activity"></div>
+        <h3>Failed Logins Over Time</h3>
+        <img src="/static/visualizations/failed_logins_heatmap.png" alt="Failed Logins Heatmap">
     </div>
     <div class="chart">
         <h3>Severity Distribution</h3>
-        <div id="severity-chart"></div>
+        <img src="/static/visualizations/severity_pie_chart.png" alt="Severity Pie Chart">
     </div>
 </div>
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
     fetch('/logs')
         .then(response => response.json())
         .then(data => {
             document.getElementById('total-logs').textContent = data.length;
-            document.getElementById('active-devices').textContent = Math.floor(data.length / 10) || "1";
-            document.getElementById('alerts').textContent = data.filter(log => log.severity === 'Critical').length;
-
-            const timestamps = data.map(log => log.timestamp);
-            const severityCounts = data.reduce((acc, log) => {
-                acc[log.severity] = (acc[log.severity] || 0) + 1;
-                return acc;
-            }, {});
-
-            Plotly.newPlot('log-activity', [{
-                x: timestamps,
-                y: Array(timestamps.length).fill(1),
-                type: 'bar',
-                marker: { color: '#ff4d4d' }
-            }], {
-                title: 'Log Activity Over Time',
-                xaxis: { title: "Timestamp", tickangle: -45 },
-                yaxis: { title: "Log Count" }
-            });
-
-            Plotly.newPlot('severity-chart', [{
-                labels: Object.keys(severityCounts),
-                values: Object.values(severityCounts),
-                type: 'pie'
-            }], { title: 'Severity Distribution' });
+            document.getElementById('active-devices').textContent = Math.floor(data.length / 10);
+            document.getElementById('alerts').textContent = data.filter(log => log.severity === 'Critical' || log.severity === 'High').length;
         })
-        .catch(error => console.error('Error loading dashboard data:', error));
+        .catch(error => {
+            console.error('Error fetching logs:', error);
+            document.getElementById('total-logs').textContent = "Error";
+            document.getElementById('active-devices').textContent = "Error";
+            document.getElementById('alerts').textContent = "Error";
+        });
 </script>
 {% endblock %}

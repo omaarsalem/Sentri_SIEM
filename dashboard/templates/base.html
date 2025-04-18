@@ -66,6 +66,9 @@
             {% if session.get('role') == "Admin" %}
             <li><a href="/settings">Settings</a></li>
             {% endif %}
+            {% if session['role'] == "Admin" %}
+<li><a href="/alerts">Alerts</a></li>
+{% endif %}
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>
