@@ -1,0 +1,4 @@
+mv /mnt/data/render.yaml ./render.yaml
+git add render.yaml
+git commit -m "Automated main.py run via render.yaml with logging"
+git push origin main

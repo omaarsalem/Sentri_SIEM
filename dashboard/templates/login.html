@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SentriSIEM</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #ff4d4d;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #2d2d2d;
+            color: white;
+        }
+        input:focus {
+            outline: 2px solid #ff4d4d;
+        }
+        button {
+            background: linear-gradient(90deg, #ff4d4d, #ff884d);
+            border: none;
+            padding: 0.75rem;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #ff884d, #ff4d4d);
+        }
+        .options {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .options a {
+            color: #ff884d;
+            text-decoration: none;
+        }
+        .options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="/static/img/logo.png" alt="SentriSIEM Logo">
+        </div>
+        <div class="title">SENTRI SIEM</div>
+        <form action="/login" method="post">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            {% if flash_message %}
+                <div class="flash-message {{ flash_type }}">{{ flash_message }}</div>
+            {% endif %}
+            {% if error_message %}
+                <div class="flash-message flash-danger">{{ error_message }}</div>
+            {% endif %}
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="remember"> Remember Me
+                </label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="options">
+            <a href="/forgot-password">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>

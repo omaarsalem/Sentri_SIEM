@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block title %}Reports | SentriSIEM{% endblock %}
+
+{% block content %}
+<style>
+    .table-container {
+        overflow-x: auto;
+        max-width: 100%;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 900px;
+    }
+    th, td {
+        padding: 10px;
+        border: 1px solid #444;
+        white-space: nowrap;
+        text-align: left;
+    }
+    th {
+        background: #2d2d2d;
+        color: white;
+    }
+    tr:hover {
+        background: #333;
+    }
+    .chart-container {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .chart-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        background: #1a1a1a;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+</style>
+
+<h2>Anomaly Reports</h2>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Event ID</th>
+                <th>Severity</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for anomaly in anomalies %}
+            <tr>
+                <td>{{ anomaly['timestamp'] }}</td>
+                <td>{{ anomaly['event_id'] }}</td>
+                <td>{{ anomaly['severity'] }}</td>
+                <td>{{ anomaly['message'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h2>General Logs</h2>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Event ID</th>
+                <th>Severity</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log['timestamp'] }}</td>
+                <td>{{ log['event_id'] }}</td>
+                <td>{{ log['severity'] }}</td>
+                <td>{{ log['message'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h2>Visualizations</h2>
+<div class="chart-container">
+    <h3>Failed Logins Over Time</h3>
+    <img src="/static/visualizations/failed_logins_heatmap.png" alt="Failed Logins Heatmap">
+
+    <h3>Severity Distribution</h3>
+    <img src="/static/visualizations/severity_pie_chart.png" alt="Severity Pie Chart">
+</div>
+
+<h2>Export Logs</h2>
+<div class="table-container">
+    <a href="/export/anomalies/csv" class="button">Download Anomalies CSV</a>
+    <a href="/export/logs/csv" class="button">Download Logs CSV</a>
+</div>
+{% endblock %}

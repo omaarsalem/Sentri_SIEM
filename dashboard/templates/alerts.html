@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Alerts | SentriSIEM{% endblock %}
+
+{% block content %}
+<h2>SOAR Alerts</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Timestamp</th>
+            <th>Message</th>
+            <th>Severity</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for alert in alerts %}
+        <tr>
+            <td>{{ alert.timestamp }}</td>
+            <td>{{ alert.message }}</td>
+            <td>{{ alert.severity }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

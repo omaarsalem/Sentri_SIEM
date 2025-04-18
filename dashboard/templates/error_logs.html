@@ -1,0 +1,19 @@
+<h1>Error Logs</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Timestamp</th>
+            <th>Error Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for error in errors %}
+        <tr>
+            <td>{{ error[0] }}</td>
+            <td>{{ error[1] }}</td>
+            <td>{{ error[2] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
