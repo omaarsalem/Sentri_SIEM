@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: sentrisiem-dashboard
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: |
+      echo "SENTRI_SIEM deployment starting..." &&
+      python scripts/main.py > dashboard/startup_log.txt 2>&1 & 
+      python dashboard/app.py
+    envVars:
+      - key: FLASK_SECRET_KEY
+        value: your_super_secret_key_here
+      - key: SENTRI_DB_PATH
+        value: dashboard/database/sentri.db
+      - key: SENTRI_API_KEY
+        value: your_secure_api_key_here
+    autoDeploy: true

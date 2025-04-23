@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | SentriSIEM{% endblock %}
+
+{% block content %}
+<style>
+    .dashboard-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    .card {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+        width: 250px;
+    }
+    .card h3 {
+        color: #ff4d4d;
+    }
+    .charts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .chart {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        border-radius: 8px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+    .chart img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+</style>
+
+<h2>Dashboard</h2>
+<div class="dashboard-container">
+    <div class="card">
+        <h3>Total Logs</h3>
+        <p id="total-logs">Loading...</p>
+    </div>
+    <div class="card">
+        <h3>Active Devices</h3>
+        <p id="active-devices">Loading...</p>
+    </div>
+    <div class="card">
+        <h3>Alerts</h3>
+        <p id="alerts">Loading...</p>
+    </div>
+</div>
+
+<div class="charts-container">
+    <div class="chart">
+        <h3>Failed Logins Over Time</h3>
+        <img src="/static/visualizations/failed_logins_heatmap.png" alt="Failed Logins Heatmap">
+    </div>
+    <div class="chart">
+        <h3>Severity Distribution</h3>
+        <img src="/static/visualizations/severity_pie_chart.png" alt="Severity Pie Chart">
+    </div>
+</div>
+
+<script>
+    fetch('/logs')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('total-logs').textContent = data.length;
+            document.getElementById('active-devices').textContent = Math.floor(data.length / 10);
+            document.getElementById('alerts').textContent = data.filter(log => log.severity === 'Critical' || log.severity === 'High').length;
+        })
+        .catch(error => {
+            console.error('Error fetching logs:', error);
+            document.getElementById('total-logs').textContent = "Error";
+            document.getElementById('active-devices').textContent = "Error";
+            document.getElementById('alerts').textContent = "Error";
+        });
+</script>
+{% endblock %}

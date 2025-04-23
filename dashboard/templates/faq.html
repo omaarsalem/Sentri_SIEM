@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | SentriSIEM</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: white;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff884d;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem 2rem;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            color: #ff4d4d;
+            margin: 0;
+        }
+        .faq-content {
+            width: 90%;
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        .faq-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            margin-bottom: 1.5rem;
+        }
+        .faq-section h3 {
+            color: #ff4d4d;
+            margin-bottom: 0.5rem;
+        }
+        .faq-section p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">SentriSIEM</a>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/real-time-monitoring">Real-Time Monitoring</a></li>
+            <li><a href="/reports">Reports</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/login">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <div class="faq-content">
+        <div class="faq-section">
+            <h3>1. How do I set up SentriSIEM?</h3>
+            <p>To set up SentriSIEM, ensure that you have all dependencies installed and run the `app.py` script to start the application.</p>
+        </div>
+
+        <div class="faq-section">
+            <h3>2. Where can I view collected logs?</h3>
+            <p>Collected logs can be viewed under the "Reports" section. You can also query the database directly.</p>
+        </div>
+
+        <div class="faq-section">
+            <h3>3. How can I filter anomalies?</h3>
+            <p>Go to the "Reports" page and use the interactive filters to display specific anomalies based on time range and severity.</p>
+        </div>
+
+        <div class="faq-section">
+            <h3>4. How do I export logs?</h3>
+            <p>You can export logs in CSV format from the "Reports" page. Click on the "Export as CSV" button to download the data.</p>
+        </div>
+
+        <div class="faq-section">
+            <h3>5. How can I secure the system?</h3>
+            <p>Ensure that only admins have access to critical settings by using Role-Based Access Control (RBAC). Also, configure HTTPS for secure communication.</p>
+        </div>
+
+        <div class="faq-section">
+            <h3>6. How do I reset my password?</h3>
+            <p>Currently, there is no automated password reset feature. Contact the system administrator to update your credentials.</p>
+        </div>
+    </div>
+</body>
+</html>

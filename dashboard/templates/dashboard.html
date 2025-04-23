@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | SentriSIEM{% endblock %}
+
+{% block content %}
+<style>
+    .dashboard-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    .card {
+        background: rgba(0, 0, 0, 0.85);
+        padding: 1.5rem;
+        border-radius: 12px;
+        text-align: center;
+        width: 260px;
+        box-shadow: 0 4px 20px rgba(255, 77, 77, 0.3);
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card h3 {
+        color: #ff4d4d;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .card p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+    }
+    .charts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .chart {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        border-radius: 12px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .chart img {
+        max-width: 100%;
+        border-radius: 6px;
+    }
+    .log-preview, .timeline-preview {
+        background: #111;
+        color: #ddd;
+        padding: 1rem;
+        max-height: 250px;
+        overflow-y: auto;
+        border-radius: 6px;
+        font-size: 0.95rem;
+    }
+    .legend {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .legend span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .critical { background: #dc3545; }
+    .high { background: #fd7e14; }
+    .medium { background: #ffc107; }
+    .low { background: #17a2b8; }
+    .info { background: #6c757d; }
+    .status-indicator {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        background: #222;
+        padding: 0.75rem;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,255,0,0.2);
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .status-indicator a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+    .status-indicator a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<h2 style="text-align:center; margin-bottom: 1rem;">🚨 Real-Time Dashboard</h2>
+<div class="status-indicator">
+    <a href="/reports">🟢 DB: Connected</a>
+    <a href="/reports#network">🟡 Network: Low Traffic</a>
+    <a href="/alerts">🔴 Alerts: None</a>
+</div>
+
+<div class="dashboard-container">
+    <div class="card"><h3>Total Logs</h3><p id="total-logs">Loading...</p></div>
+    <div class="card"><h3>Active Devices</h3><p id="active-devices">Loading...</p></div>
+    <div class="card"><h3>Critical Alerts</h3><p id="alerts">Loading...</p></div>
+    <div class="card"><h3>SOAR Alerts</h3><p id="soar-count">Loading...</p></div>
+    <div class="card"><h3>Network Packets</h3><p id="packet-count">Loading...</p></div>
+    <div class="card"><h3>Anomalies</h3><p id="anomaly-count">Loading...</p></div>
+</div>
+
+<div class="legend">
+    <span><span class="dot critical"></span>Critical</span>
+    <span><span class="dot high"></span>High</span>
+    <span><span class="dot medium"></span>Medium</span>
+    <span><span class="dot low"></span>Low</span>
+    <span><span class="dot info"></span>Info</span>
+</div>
+
+<button class="collapsible" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+    📌 Toggle Charts Section
+</button>
+<div class="charts-container">
+    <div class="chart">
+        <h3>📊 Failed Logins Over Time</h3>
+        <img src="/static/visualizations/failed_logins_heatmap.png" alt="Failed Logins Heatmap">
+    </div>
+    <div class="chart">
+        <h3>🧯 Severity Distribution</h3>
+        <img src="/static/visualizations/severity_pie_chart.png" alt="Severity Pie Chart">
+    </div>
+</div>
+
+<button class="collapsible" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+    🧠 Toggle Timeline View
+</button>
+<div class="charts-container">
+    <div class="chart">
+        <h3>🧠 Critical Logs Timeline</h3>
+        <div id="recent-logs" class="timeline-preview">Loading...</div>
+    </div>
+</div>
+
+<div style="text-align:center; margin-top: 2rem;">
+    <button onclick="location.reload()" style="padding: 10px 25px; font-size: 1rem; border-radius: 6px; background: #ff4d4d; color: white; border: none; cursor: pointer;">
+        🔁 Refresh Dashboard
+    </button>
+</div>
+
+<script>
+    fetch('/logs')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('total-logs').textContent = data.length;
+            document.getElementById('active-devices').textContent = Math.max(1, new Set(data.map(log => log.source)).size || 1);
+            document.getElementById('alerts').textContent = data.filter(log => log.severity === 'Critical' || log.severity === 'High').length;
+
+            const recent = data.filter(log => log.severity === 'Critical' || log.severity === 'High').slice(0, 8);
+            const logList = recent.map(log => `<div>[${log.timestamp}] <strong>${log.event_id}</strong> - ${log.message}</div>`).join("");
+            document.getElementById('recent-logs').innerHTML = logList || "No recent alerts.";
+        })
+        .catch(() => {
+            document.getElementById('total-logs').textContent = "Error";
+            document.getElementById('active-devices').textContent = "Error";
+            document.getElementById('alerts').textContent = "Error";
+            document.getElementById('recent-logs').textContent = "Error";
+        });
+
+    fetch('/api/soar-count')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('soar-count').textContent = data.count || "0";
+        });
+
+    fetch('/reports')
+        .then(res => res.text())
+        .then(html => {
+            const temp = document.createElement("div");
+            temp.innerHTML = html;
+            const anomalyRows = temp.querySelectorAll("h3:contains('Anomalies') + table tbody tr");
+            document.getElementById("anomaly-count").textContent = anomalyRows.length || "0";
+        });
+
+    fetch('/api/network-traffic-summary')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('packet-count').textContent = data.total || "0";
+        })
+        .catch(() => {
+            document.getElementById('packet-count').textContent = "N/A";
+        });
+</script>
+{% endblock %}

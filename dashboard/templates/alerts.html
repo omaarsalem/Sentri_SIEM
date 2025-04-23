@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block title %}Alerts | SentriSIEM{% endblock %}
+
+{% block content %}
+<h2>🚨 SOAR Alerts</h2>
+<p class="subtext">Review real-time generated alerts based on the latest log analysis.</p>
+
+<form method="get" class="filter-form">
+    <select name="severity">
+        <option value="">All Severities</option>
+        <option value="Critical" {% if request.args.get('severity') == 'Critical' %}selected{% endif %}>Critical</option>
+        <option value="High" {% if request.args.get('severity') == 'High' %}selected{% endif %}>High</option>
+        <option value="Medium" {% if request.args.get('severity') == 'Medium' %}selected{% endif %}>Medium</option>
+        <option value="Low" {% if request.args.get('severity') == 'Low' %}selected{% endif %}>Low</option>
+        <option value="Info" {% if request.args.get('severity') == 'Info' %}selected{% endif %}>Info</option>
+    </select>
+    <input type="date" name="from" value="{{ request.args.get('from', '') }}">
+    <input type="date" name="to" value="{{ request.args.get('to', '') }}">
+    <button type="submit">🔍 Filter</button>
+    <a href="/export/alerts/csv?severity={{ request.args.get('severity', '') }}&from={{ request.args.get('from', '') }}&to={{ request.args.get('to', '') }}" class="btn">📤 Export CSV</a>
+</form>
+
+<canvas id="alertChart" style="max-width: 400px; margin: 2rem auto;"></canvas>
+
+<table class="alerts-table sortable">
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">Timestamp ⬍</th>
+            <th onclick="sortTable(1)">Source</th>
+            <th onclick="sortTable(2)">Alert Type</th>
+            <th>Description</th>
+            <th onclick="sortTable(4)">Severity ⬍</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for alert in alerts %}
+        <tr>
+            <td>{{ alert.timestamp }}</td>
+            <td>{{ alert.source }}</td>
+            <td>{{ alert.alert_type }}</td>
+            <td>{{ alert.description }}</td>
+            <td>
+                <span class="badge badge-{{ alert.severity | lower }}">
+                    {{ alert.severity }}
+                </span>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<style>
+    .filter-form {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .filter-form input, .filter-form select, .filter-form button, .filter-form .btn {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background: #222;
+        color: white;
+        text-decoration: none;
+    }
+    .alerts-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .alerts-table th, .alerts-table td {
+        padding: 0.75rem;
+        border: 1px solid #333;
+        text-align: left;
+        cursor: pointer;
+    }
+    .alerts-table th {
+        background-color: #222;
+        color: #ff4d4d;
+    }
+    .alerts-table tr:nth-child(even) {
+        background-color: #1a1a1a;
+    }
+    .subtext {
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-bottom: 1rem;
+    }
+    .badge {
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+        display: inline-block;
+    }
+    .badge-critical, .badge-high { background: #dc3545; }
+    .badge-medium { background: #fd7e14; }
+    .badge-low { background: #17a2b8; }
+    .badge-info { background: #6c757d; }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const rows = Array.from(document.querySelectorAll(".alerts-table tbody tr"));
+    const severityCounts = rows.reduce((acc, row) => {
+        const sev = row.children[4].innerText.trim();
+        acc[sev] = (acc[sev] || 0) + 1;
+        return acc;
+    }, {});
+
+    const ctx = document.getElementById("alertChart").getContext("2d");
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: Object.keys(severityCounts),
+            datasets: [{
+                label: 'Alert Severity Distribution',
+                data: Object.values(severityCounts),
+                backgroundColor: ['#dc3545', '#fd7e14', '#17a2b8', '#6c757d']
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+
+    function sortTable(n) {
+        const table = document.querySelector(".alerts-table");
+        let switching = true, dir = "asc", switchcount = 0;
+        while (switching) {
+            switching = false;
+            const rows = table.rows;
+            for (let i = 1; i < rows.length - 1; i++) {
+                let shouldSwitch = false;
+                let x = rows[i].getElementsByTagName("TD")[n];
+                let y = rows[i + 1].getElementsByTagName("TD")[n];
+                if (dir === "asc" && x.innerText.toLowerCase() > y.innerText.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                } else if (dir === "desc" && x.innerText.toLowerCase() < y.innerText.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchcount++;
+            } else if (switchcount === 0 && dir === "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+</script>
+{% endblock %}

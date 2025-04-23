@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SentriSIEM{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .flash-message {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+.flash-success { background: #28a745; color: white; }
+.flash-danger { background: #dc3545; color: white; }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4d4d;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.9);
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">SentriSIEM</a>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/reports">Reports</a></li>
+            {% if session.get('role') == "Admin" %}
+            <li><a href="/settings">Settings</a></li>
+            {% endif %}
+            {% if session['role'] == "Admin" %}
+<li><a href="/alerts">Alerts</a></li>
+{% endif %}
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>{% block header %}SentriSIEM{% endblock %}</h1>
+    </header>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

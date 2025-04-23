@@ -1,0 +1,2928 @@
+[2025-04-20 21:13:13] 🚀 Launching SentriSIEM full pipeline...
+[2025-04-20 21:13:13] 🚀 Running collect_device_logs.py (timeout: 60s)
+[2025-04-20 21:14:02] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:14:02] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:15:02] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:15:02] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:25:11] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:25:11] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:25:12] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:25:12] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:26:12] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:26:12] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:26:12] [OUTPUT] Collecting device logs for 60 seconds...
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:12', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:17', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:22', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:27', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:32', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:37', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:42', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:47', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:52', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:25:57', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:26:02', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-20 21:26:07', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+Device log collection complete.
+[2025-04-20 21:26:12] ✅ Finished collect_device_logs.py
+[2025-04-20 21:26:12] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:27:12] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-20 21:27:12] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-20 21:27:12] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-20 21:27:12] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-20 21:28:12] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-20 21:28:12] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-20 21:28:12] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-20 21:28:12] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-20 21:28:13] [OUTPUT] [INFO] Running SOAR playbooks...
+[INFO] SOAR processing complete.
+[2025-04-20 21:28:13] ✅ Finished soar_rules.py
+[2025-04-20 21:28:13] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-20 21:28:14] [OUTPUT] [INFO] Running SOAR playbooks...
+[INFO] SOAR processing complete.
+[2025-04-20 21:28:14] ✅ Finished soar_rules.py
+[2025-04-20 21:28:14] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-20 21:28:25] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] 54 anomalies saved to database.
+[INFO] Done.
+[2025-04-20 21:28:25] ✅ Finished log_analysis.py
+[2025-04-20 21:28:25] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-20 21:28:25] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] 54 anomalies saved to database.
+[INFO] Done.
+[2025-04-20 21:28:25] ✅ Finished log_analysis.py
+[2025-04-20 21:28:25] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-20 21:28:28] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-20 21:28:28] ✅ Finished visualization.py
+[2025-04-20 21:28:28] ✅ Pipeline complete in 195.7s.
+
+[2025-04-20 21:28:28] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-20 21:28:28] ✅ Finished visualization.py
+[2025-04-20 21:28:28] ✅ Pipeline complete in 196.68s.
+
+[2025-04-20 21:29:17] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:29:17] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:30:17] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:30:17] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:31:17] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-20 21:31:17] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-20 21:32:17] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-20 21:32:17] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-20 21:32:18] [OUTPUT] [INFO] Running SOAR playbooks...
+[INFO] SOAR processing complete.
+[2025-04-20 21:32:18] ✅ Finished soar_rules.py
+[2025-04-20 21:32:18] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-20 21:32:21] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] 54 anomalies saved to database.
+[INFO] Done.
+[2025-04-20 21:32:21] ✅ Finished log_analysis.py
+[2025-04-20 21:32:21] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-20 21:32:23] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-20 21:32:23] ✅ Finished visualization.py
+[2025-04-20 21:32:23] ✅ Pipeline complete in 186.44s.
+
+[2025-04-20 21:32:31] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:32:31] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:32:31] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:32:31] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:33:31] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:33:31] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:33:31] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:33:31] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:53:12] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:53:12] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:53:12] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-20 21:53:12] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-20 21:54:12] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:54:12] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-20 21:54:13] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-20 21:54:13] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 01:15:33] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 01:15:33] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 01:15:33] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 01:15:33] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 01:16:33] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 01:16:33] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 01:16:33] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 01:16:33] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 01:17:33] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 01:17:33] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 01:17:34] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 01:17:34] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 01:18:33] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 01:18:33] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 01:18:34] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 01:18:34] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 01:18:34] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 01:18:34] ✅ Finished soar_rules.py
+[2025-04-23 01:18:34] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 01:18:35] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 01:18:35] ✅ Finished soar_rules.py
+[2025-04-23 01:18:35] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 01:18:47] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\log_analysis.py", line 4, in <module>
+    from sklearn.ensemble import IsolationForest
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\__init__.py", line 73, in <module>
+    from .base import clone  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 19, in <module>
+    from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\__init__.py", line 15, in <module>
+    from ._chunking import gen_batches, gen_even_slices
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_chunking.py", line 11, in <module>
+    from ._param_validation import Interval, validate_params
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 17, in <module>
+    from .validation import _is_arraylike_not_scalar
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\validation.py", line 21, in <module>
+    from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_array_api.py", line 17, in <module>
+    from .fixes import parse_version
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\fixes.py", line 17, in <module>
+    import scipy.stats
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\__init__.py", line 624, in <module>
+    from ._stats_py import *
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_stats_py.py", line 52, in <module>
+    from . import distributions
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\distributions.py", line 10, in <module>
+    from . import _continuous_distns
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_continuous_distns.py", line 30, in <module>
+    from scipy.stats._distribution_infrastructure import _log1mexp
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_distribution_infrastructure.py", line 16, in <module>
+    from scipy.stats import qmc
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\qmc.py", line 235, in <module>
+    from ._qmc import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_qmc.py", line 24, in <module>
+    import scipy.stats as stats
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\__init__.py", line 146, in __getattr__
+    return _importlib.import_module(f'scipy.{name}')
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1357, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 418, in __enter__
+MemoryError
+[2025-04-23 01:18:47] ✅ Finished log_analysis.py
+[2025-04-23 01:18:47] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 01:18:47] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\log_analysis.py", line 4, in <module>
+    from sklearn.ensemble import IsolationForest
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\__init__.py", line 73, in <module>
+    from .base import clone  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 19, in <module>
+    from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\__init__.py", line 15, in <module>
+    from ._chunking import gen_batches, gen_even_slices
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_chunking.py", line 11, in <module>
+    from ._param_validation import Interval, validate_params
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 17, in <module>
+    from .validation import _is_arraylike_not_scalar
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\validation.py", line 21, in <module>
+    from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_array_api.py", line 17, in <module>
+    from .fixes import parse_version
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\fixes.py", line 17, in <module>
+    import scipy.stats
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\__init__.py", line 624, in <module>
+    from ._stats_py import *
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_stats_py.py", line 52, in <module>
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\distributions.py", line 10, in <module>
+    from . import _continuous_distns
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_continuous_distns.py", line 30, in <module>
+    from scipy.stats._distribution_infrastructure import _log1mexp
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_distribution_infrastructure.py", line 16, in <module>
+    from scipy.stats import qmc
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\qmc.py", line 235, in <module>
+    from ._qmc import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\scipy\stats\_qmc.py", line 33, in <module>
+    from ._qmc_cy import (
+    ...<7 lines>...
+    )
+  File "<frozen importlib._bootstrap>", line 1357, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 418, in __enter__
+  File "<frozen importlib._bootstrap>", line 311, in acquire
+  File "<frozen importlib._bootstrap>", line 170, in __enter__
+  File "<frozen importlib._bootstrap>", line 132, in setdefault
+MemoryError
+[2025-04-23 01:18:47] ✅ Finished log_analysis.py
+[2025-04-23 01:18:47] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 01:18:49] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\visualization.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\matplotlib\cbook.py", line 32, in <module>
+    from matplotlib import _api, _c_internal_utils
+ImportError: DLL load failed while importing _c_internal_utils: The paging file is too small for this operation to complete.
+[2025-04-23 01:18:49] ✅ Finished visualization.py
+[2025-04-23 01:18:49] ✅ Pipeline complete in 196.42s.
+
+[2025-04-23 01:18:50] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\visualization.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\matplotlib\__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\matplotlib\rcsetup.py", line 33, in <module>
+    from cycler import Cycler, cycler as ccycler
+  File "C:\Users\omaar\AppData\Roaming\Python\Python313\site-packages\cycler\__init__.py", line 44, in <module>
+    from __future__ import annotations
+MemoryError
+[2025-04-23 01:18:50] ✅ Finished visualization.py
+[2025-04-23 01:18:50] ✅ Pipeline complete in 196.45s.
+
+[2025-04-23 01:57:13] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 01:57:13] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 01:57:13] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 01:57:13] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:02:58] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:02:58] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:02:59] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:02:59] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:03:58] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:03:58] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:03:59] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:03:59] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:04:59] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:04:59] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:04:59] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:04:59] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:05:59] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:05:59] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:05:59] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:05:59] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:06:00] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:06:00] ✅ Finished soar_rules.py
+[2025-04-23 02:06:00] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:06:00] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:06:00] ✅ Finished soar_rules.py
+[2025-04-23 02:06:00] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:06:05] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] No new anomalies found.
+[INFO] Done.
+[2025-04-23 02:06:05] ✅ Finished log_analysis.py
+[2025-04-23 02:06:05] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:06:05] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] No new anomalies found.
+[INFO] Done.
+[2025-04-23 02:06:05] ✅ Finished log_analysis.py
+[2025-04-23 02:06:05] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:06:09] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-23 02:06:09] ✅ Finished visualization.py
+[2025-04-23 02:06:09] ✅ Pipeline complete in 190.43s.
+
+[2025-04-23 02:06:10] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-23 02:06:10] ✅ Finished visualization.py
+[2025-04-23 02:06:10] ✅ Pipeline complete in 191.44s.
+
+[2025-04-23 02:15:02] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:15:02] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:15:03] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:15:03] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:16:02] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:16:02] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:16:03] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:16:03] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:16:49] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:16:49] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:17:02] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:17:02] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:17:03] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:17:03] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:17:49] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:17:49] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:18:02] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:18:02] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:18:03] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:18:03] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:18:03] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:18:03] ✅ Finished soar_rules.py
+[2025-04-23 02:18:03] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:18:04] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:18:04] ✅ Finished soar_rules.py
+[2025-04-23 02:18:04] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:18:06] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 84 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:18:06] ✅ Finished log_analysis.py
+[2025-04-23 02:18:06] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:18:07] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 84 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:18:07] ✅ Finished log_analysis.py
+[2025-04-23 02:18:07] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:18:09] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-23 02:18:09] ✅ Finished visualization.py
+[2025-04-23 02:18:09] ✅ Pipeline complete in 186.43s.
+
+[2025-04-23 02:18:09] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-23 02:18:09] ✅ Finished visualization.py
+[2025-04-23 02:18:10] ✅ Pipeline complete in 187.44s.
+
+[2025-04-23 02:18:49] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:18:49] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:19:49] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:19:49] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:19:50] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:19:50] ✅ Finished soar_rules.py
+[2025-04-23 02:19:50] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:19:53] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 108 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:19:53] ✅ Finished log_analysis.py
+[2025-04-23 02:19:53] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:19:55] [OUTPUT] [INFO] Generating visualizations...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[INFO] All visualizations completed.
+[2025-04-23 02:19:55] ✅ Finished visualization.py
+[2025-04-23 02:19:55] ✅ Pipeline complete in 186.42s.
+
+[2025-04-23 02:21:50] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:21:50] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:22:05] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:22:05] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:22:51] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:22:51] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:23:05] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:23:05] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:23:51] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:23:51] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:24:05] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:24:05] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:24:51] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:24:51] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:24:51] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:24:51] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:24:52] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:24:52] ✅ Finished soar_rules.py
+[2025-04-23 02:24:52] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:24:52] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:24:52] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:24:55] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 130 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:24:55] ✅ Finished log_analysis.py
+[2025-04-23 02:24:55] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:24:58] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:24:58] ✅ Finished visualization.py
+[2025-04-23 02:24:58] ✅ Pipeline complete in 187.55s.
+
+[2025-04-23 02:25:06] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:25:06] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:25:07] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:25:07] ✅ Finished soar_rules.py
+[2025-04-23 02:25:07] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:25:10] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 132 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:25:10] ✅ Finished log_analysis.py
+[2025-04-23 02:25:10] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:25:13] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:25:13] ✅ Finished visualization.py
+[2025-04-23 02:25:13] ✅ Pipeline complete in 187.56s.
+
+[2025-04-23 02:25:17] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:25:17] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:25:21] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:25:21] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:25:38] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:25:38] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:25:45] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:25:45] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:25:51] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:25:51] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:25:52] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:25:52] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:26:17] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:26:17] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:26:21] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:26:21] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:26:38] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:26:38] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:26:45] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:26:45] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:26:51] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:26:51] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:26:52] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:26:52] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:27:17] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:27:17] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:27:21] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:27:21] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:27:39] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:27:39] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:27:45] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:27:45] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:27:51] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:27:51] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:27:52] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:27:52] ✅ Finished soar_rules.py
+[2025-04-23 02:27:52] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:27:53] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:27:53] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:27:53] [ERROR] File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\log_analysis.py", line 80
+    tfidf_matrix: csr_matrix = tfidf.fit_transform(df["message"])
+SyntaxError: expected 'except' or 'finally' block
+[2025-04-23 02:27:53] ✅ Finished log_analysis.py
+[2025-04-23 02:27:53] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:27:54] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:27:54] ✅ Finished soar_rules.py
+[2025-04-23 02:27:54] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:27:55] [ERROR] File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\log_analysis.py", line 80
+    tfidf_matrix: csr_matrix = tfidf.fit_transform(df["message"])
+SyntaxError: expected 'except' or 'finally' block
+[2025-04-23 02:27:55] ✅ Finished log_analysis.py
+[2025-04-23 02:27:55] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:27:56] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:27:56] ✅ Finished visualization.py
+[2025-04-23 02:27:56] ✅ Pipeline complete in 185.36s.
+
+[2025-04-23 02:27:58] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:27:58] ✅ Finished visualization.py
+[2025-04-23 02:27:58] ✅ Pipeline complete in 185.34s.
+
+[2025-04-23 02:28:17] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:28:17] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:28:18] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:28:18] ✅ Finished soar_rules.py
+[2025-04-23 02:28:18] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:28:21] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:28:21] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:28:21] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 196 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:28:21] ✅ Finished log_analysis.py
+[2025-04-23 02:28:21] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:28:22] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:28:22] ✅ Finished soar_rules.py
+[2025-04-23 02:28:22] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:28:24] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:28:24] ✅ Finished visualization.py
+[2025-04-23 02:28:24] ✅ Pipeline complete in 187.33s.
+
+[2025-04-23 02:28:25] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 198 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:28:25] ✅ Finished log_analysis.py
+[2025-04-23 02:28:25] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:28:28] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:28:28] ✅ Finished visualization.py
+[2025-04-23 02:28:28] ✅ Pipeline complete in 187.37s.
+
+[2025-04-23 02:28:39] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:28:39] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:28:40] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:28:40] ✅ Finished soar_rules.py
+[2025-04-23 02:28:40] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:28:43] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 204 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:28:43] ✅ Finished log_analysis.py
+[2025-04-23 02:28:43] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:28:45] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:28:45] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:28:46] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:28:46] ✅ Finished visualization.py
+[2025-04-23 02:28:46] ✅ Pipeline complete in 187.4s.
+
+[2025-04-23 02:28:46] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[INFO] SOAR processing complete.
+[2025-04-23 02:28:46] ✅ Finished soar_rules.py
+[2025-04-23 02:28:46] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:28:49] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 204 log entries...
+[INFO] No anomalies detected.
+[INFO] Done.
+[2025-04-23 02:28:49] ✅ Finished log_analysis.py
+[2025-04-23 02:28:49] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:28:52] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:28:52] ✅ Finished visualization.py
+[2025-04-23 02:28:52] ✅ Pipeline complete in 187.41s.
+
+[2025-04-23 02:49:08] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:49:08] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:49:09] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:49:09] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:49:18] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:49:18] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:50:08] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:50:08] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:50:09] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:50:09] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:50:18] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:50:18] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:51:08] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:51:08] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:51:09] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:51:09] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:51:19] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:51:19] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:51:43] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:51:43] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:51:46] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:51:46] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:52:09] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:52:09] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:52:09] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:52:09] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:52:14] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:52:14] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:52:19] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:52:19] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:52:43] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:52:43] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:52:46] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:52:46] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:52:46] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:52:46] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:52:48] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:52:48] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:53:09] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:53:09] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:53:09] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:53:09] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:53:14] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:53:14] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:53:14] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:53:14] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:53:18] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 238 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:53:18] ✅ Finished log_analysis.py
+[2025-04-23 02:53:18] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:53:18] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 238 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:53:18] ✅ Finished log_analysis.py
+[2025-04-23 02:53:18] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:53:19] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:53:19] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:53:21] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:53:21] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:53:22] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:53:22] ✅ Finished visualization.py
+[2025-04-23 02:53:22] ✅ Pipeline complete in 253.63s.
+
+[2025-04-23 02:53:22] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:53:22] ✅ Finished visualization.py
+[2025-04-23 02:53:22] ✅ Pipeline complete in 253.52s.
+
+[2025-04-23 02:53:23] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 238 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+[INFO] 36 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 02:53:23] ✅ Finished log_analysis.py
+[2025-04-23 02:53:23] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:53:26] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:53:26] ✅ Finished visualization.py
+[2025-04-23 02:53:26] ✅ Pipeline complete in 247.58s.
+
+[2025-04-23 02:53:32] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 02:53:32] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 02:53:43] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:53:43] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:53:46] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:53:46] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:53:46] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:53:46] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:53:48] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:53:48] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:54:14] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:54:14] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:54:14] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:54:14] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:54:21] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:54:21] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:54:32] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 02:54:32] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 02:54:43] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:54:43] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:54:46] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:54:46] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:54:46] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:54:46] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:54:48] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:54:48] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:55:14] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:55:14] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:55:14] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:55:14] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:55:21] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:55:21] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:55:32] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 02:55:32] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 02:55:43] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:55:43] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:55:46] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:55:46] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:55:46] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:55:46] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:55:48] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:55:48] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:55:52] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 271 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:55:52] ✅ Finished log_analysis.py
+[2025-04-23 02:55:52] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:55:55] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 271 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:55:55] ✅ Finished log_analysis.py
+[2025-04-23 02:55:55] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:55:55] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:55:55] ✅ Finished visualization.py
+[2025-04-23 02:55:55] ✅ Pipeline complete in 252.5s.
+
+[2025-04-23 02:55:58] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:55:58] ✅ Finished visualization.py
+[2025-04-23 02:55:58] ✅ Pipeline complete in 252.66s.
+
+[2025-04-23 02:56:14] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:56:14] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:56:14] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:56:14] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:56:21] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:56:21] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:56:23] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 273 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:56:23] ✅ Finished log_analysis.py
+[2025-04-23 02:56:23] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:56:26] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:56:26] ✅ Finished visualization.py
+[2025-04-23 02:56:26] ✅ Pipeline complete in 252.62s.
+
+[2025-04-23 02:56:32] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 02:56:32] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 02:56:46] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:56:46] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:56:48] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:56:48] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:56:55] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 273 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:56:55] ✅ Finished log_analysis.py
+[2025-04-23 02:56:55] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:56:57] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 273 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+[ANALYSIS ERROR] database is locked
+[INFO] Done.
+[2025-04-23 02:56:57] ✅ Finished log_analysis.py
+[2025-04-23 02:56:57] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:56:58] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:56:58] ✅ Finished visualization.py
+[2025-04-23 02:56:58] ✅ Pipeline complete in 252.54s.
+
+[2025-04-23 02:57:00] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:57:00] ✅ Finished visualization.py
+[2025-04-23 02:57:00] ✅ Pipeline complete in 252.6s.
+
+[2025-04-23 02:57:14] ⏱️ Timeout reached for soar_rules.py. Terminated.
+[2025-04-23 02:57:14] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:57:15] [OUTPUT] [INFO] Running SOAR playbooks...
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[INFO] SOAR processing complete.
+[2025-04-23 02:57:15] [OUTPUT] [INFO] Running SOAR playbooks...
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[SOAR ERROR] database is locked
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Suspicious Process Execution | Source: Process | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Privileged Access Detected | Source: Security | Severity: Medium
+[ALERT] Inserted: Brute Force Attempt | Source: Security | Severity: High
+[INFO] SOAR processing complete.
+[2025-04-23 02:57:15] ✅ Finished soar_rules.py
+[2025-04-23 02:57:15] ✅ Finished soar_rules.py
+[2025-04-23 02:57:15] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:57:15] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 02:57:18] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 273 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+[INFO] 42 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 02:57:18] ✅ Finished log_analysis.py
+[2025-04-23 02:57:18] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:57:18] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 273 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+[INFO] 42 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 02:57:18] ✅ Finished log_analysis.py
+[2025-04-23 02:57:18] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:57:18] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 273 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+[INFO] 42 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 02:57:18] ✅ Finished log_analysis.py
+[2025-04-23 02:57:18] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 02:57:21] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:57:21] ✅ Finished visualization.py
+[2025-04-23 02:57:21] ✅ Pipeline complete in 240.57s.
+
+[2025-04-23 02:57:21] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:57:21] ✅ Finished visualization.py
+[2025-04-23 02:57:21] ✅ Pipeline complete in 229.57s.
+
+[2025-04-23 02:57:21] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 02:57:21] ✅ Finished visualization.py
+[2025-04-23 02:57:21] ✅ Pipeline complete in 247.6s.
+
+[2025-04-23 03:02:00] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:02:00] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:02:10] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:02:10] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:03:00] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:03:00] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:03:10] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:03:10] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:04:00] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 03:04:00] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:04:10] ⏱️ Timeout reached for capture_network_traffic.py. Terminated.
+[2025-04-23 03:04:10] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:05:01] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:05:01] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:05:02] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[INFO] SOAR processing complete.
+[2025-04-23 03:05:02] ✅ Finished soar_rules.py
+[2025-04-23 03:05:02] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:05:05] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 296 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+275  2025-04-23 03:04:10      4672   Medium  Privileged access granted
+277  2025-04-23 03:04:15      4672   Medium  Privileged access granted
+279  2025-04-23 03:04:20      4672   Medium  Privileged access granted
+284  2025-04-23 03:04:31      4672   Medium  Privileged access granted
+287  2025-04-23 03:04:40      4672   Medium  Privileged access granted
+290  2025-04-23 03:04:46      4672   Medium  Privileged access granted
+293  2025-04-23 03:04:56      4672   Medium  Privileged access granted
+[INFO] 49 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 03:05:05] ✅ Finished log_analysis.py
+[2025-04-23 03:05:05] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:05:08] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:05:08] ✅ Finished visualization.py
+[2025-04-23 03:05:08] ✅ Pipeline complete in 187.53s.
+
+[2025-04-23 03:05:10] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:05:10] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:05:11] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[INFO] SOAR processing complete.
+[2025-04-23 03:05:11] ✅ Finished soar_rules.py
+[2025-04-23 03:05:11] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:05:14] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 297 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+53   2025-04-23 02:05:39      4672   Medium  Privileged access granted
+54   2025-04-23 02:05:44      4672   Medium  Privileged access granted
+93   2025-04-23 02:19:04      4672   Medium  Privileged access granted
+94   2025-04-23 02:19:09      4672   Medium  Privileged access granted
+97   2025-04-23 02:19:14      4672   Medium  Privileged access granted
+99   2025-04-23 02:19:19      4672   Medium  Privileged access granted
+101  2025-04-23 02:19:24      4672   Medium  Privileged access granted
+104  2025-04-23 02:19:34      4672   Medium  Privileged access granted
+109  2025-04-23 02:23:56      4672   Medium  Privileged access granted
+110  2025-04-23 02:24:01      4672   Medium  Privileged access granted
+118  2025-04-23 02:24:21      4672   Medium  Privileged access granted
+139  2025-04-23 02:27:08      4672   Medium  Privileged access granted
+146  2025-04-23 02:27:21      4672   Medium  Privileged access granted
+163  2025-04-23 02:27:41      4672   Medium  Privileged access granted
+164  2025-04-23 02:27:42      4672   Medium  Privileged access granted
+170  2025-04-23 02:27:47      4672   Medium  Privileged access granted
+171  2025-04-23 02:27:48      4672   Medium  Privileged access granted
+178  2025-04-23 02:27:56      4672   Medium  Privileged access granted
+181  2025-04-23 02:28:00      4672   Medium  Privileged access granted
+183  2025-04-23 02:28:02      4672   Medium  Privileged access granted
+190  2025-04-23 02:28:11      4672   Medium  Privileged access granted
+191  2025-04-23 02:28:12      4672   Medium  Privileged access granted
+193  2025-04-23 02:28:15      4672   Medium  Privileged access granted
+202  2025-04-23 02:28:35      4672   Medium  Privileged access granted
+208  2025-04-23 02:51:19      4672   Medium  Privileged access granted
+213  2025-04-23 02:51:24      4672   Medium  Privileged access granted
+217  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+218  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+219  2025-04-23 02:51:34      4672   Medium  Privileged access granted
+224  2025-04-23 02:51:44      4672   Medium  Privileged access granted
+234  2025-04-23 02:51:59      4672   Medium  Privileged access granted
+246  2025-04-23 02:54:03      4672   Medium  Privileged access granted
+254  2025-04-23 02:54:19      4672   Medium  Privileged access granted
+256  2025-04-23 02:54:23      4672   Medium  Privileged access granted
+258  2025-04-23 02:54:26      4672   Medium  Privileged access granted
+265  2025-04-23 02:54:38      4672   Medium  Privileged access granted
+272  2025-04-23 02:56:10      4672   Medium  Privileged access granted
+275  2025-04-23 03:04:10      4672   Medium  Privileged access granted
+277  2025-04-23 03:04:15      4672   Medium  Privileged access granted
+279  2025-04-23 03:04:20      4672   Medium  Privileged access granted
+284  2025-04-23 03:04:31      4672   Medium  Privileged access granted
+287  2025-04-23 03:04:40      4672   Medium  Privileged access granted
+290  2025-04-23 03:04:46      4672   Medium  Privileged access granted
+293  2025-04-23 03:04:56      4672   Medium  Privileged access granted
+[INFO] 49 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 03:05:14] ✅ Finished log_analysis.py
+[2025-04-23 03:05:14] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:05:17] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:05:17] ✅ Finished visualization.py
+[2025-04-23 03:05:17] ✅ Pipeline complete in 187.51s.
+
+[2025-04-23 03:09:13] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:09:13] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:09:16] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:09:16] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:09:22] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:09:22] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:10:13] [OUTPUT] Collecting device logs for 60 seconds...
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:13', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:18', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:23', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:28', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:33', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:38', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:43', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:48', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:53', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:09:58', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:10:03', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+[INFO] Log written: {'timestamp': '2025-04-23 03:10:08', 'device_id': 'DEVICE-001', 'log_message': 'Simulated log entry from device.'}
+Device log collection complete.
+[2025-04-23 03:10:13] ✅ Finished collect_device_logs.py
+[2025-04-23 03:10:13] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:10:14] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\capture_network_traffic.py", line 4, in <module>
+    from scapy.all import sniff
+ModuleNotFoundError: No module named 'scapy'
+[2025-04-23 03:10:14] ✅ Finished capture_network_traffic.py
+[2025-04-23 03:10:14] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:10:16] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:10:16] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:10:17] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\capture_network_traffic.py", line 4, in <module>
+    from scapy.all import sniff
+ModuleNotFoundError: No module named 'scapy'
+[2025-04-23 03:10:17] ✅ Finished capture_network_traffic.py
+[2025-04-23 03:10:17] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:10:22] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:10:22] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:10:23] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\capture_network_traffic.py", line 4, in <module>
+    from scapy.all import sniff
+ModuleNotFoundError: No module named 'scapy'
+[2025-04-23 03:10:23] ✅ Finished capture_network_traffic.py
+[2025-04-23 03:10:23] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:11:14] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:11:14] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:11:15] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[INFO] SOAR processing complete.
+[2025-04-23 03:11:15] ✅ Finished soar_rules.py
+[2025-04-23 03:11:15] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:11:18] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:11:18] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:11:19] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[INFO] SOAR processing complete.
+[2025-04-23 03:11:19] ✅ Finished soar_rules.py
+[2025-04-23 03:11:19] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:11:24] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:11:24] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:11:25] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[INFO] SOAR processing complete.
+[2025-04-23 03:11:25] ✅ Finished soar_rules.py
+[2025-04-23 03:11:25] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:12:09] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:12:09] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:12:15] ⏱️ Timeout reached for log_analysis.py. Terminated.
+[2025-04-23 03:12:15] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:12:18] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:12:18] ✅ Finished visualization.py
+[2025-04-23 03:12:18] ✅ Pipeline complete in 185.62s.
+
+[2025-04-23 03:12:19] ⏱️ Timeout reached for log_analysis.py. Terminated.
+[2025-04-23 03:12:19] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:12:22] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:12:22] ✅ Finished visualization.py
+[2025-04-23 03:12:22] ✅ Pipeline complete in 185.4s.
+
+[2025-04-23 03:12:25] ⏱️ Timeout reached for log_analysis.py. Terminated.
+[2025-04-23 03:12:25] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:12:28] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:12:28] ✅ Finished visualization.py
+[2025-04-23 03:12:28] ✅ Pipeline complete in 185.4s.
+
+[2025-04-23 03:13:09] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:13:09] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:13:10] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\capture_network_traffic.py", line 4, in <module>
+    from scapy.all import sniff
+ModuleNotFoundError: No module named 'scapy'
+[2025-04-23 03:13:10] ✅ Finished capture_network_traffic.py
+[2025-04-23 03:13:10] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:13:27] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:13:27] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:14:10] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:14:10] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:14:11] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[INFO] SOAR processing complete.
+[2025-04-23 03:14:11] ✅ Finished soar_rules.py
+[2025-04-23 03:14:11] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:14:27] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:14:27] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:14:28] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\capture_network_traffic.py", line 4, in <module>
+    from scapy.all import sniff
+ModuleNotFoundError: No module named 'scapy'
+[2025-04-23 03:14:28] ✅ Finished capture_network_traffic.py
+[2025-04-23 03:14:28] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:15:11] ⏱️ Timeout reached for log_analysis.py. Terminated.
+[2025-04-23 03:15:11] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:15:14] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:15:14] ✅ Finished visualization.py
+[2025-04-23 03:15:14] ✅ Pipeline complete in 185.5s.
+
+[2025-04-23 03:15:28] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:15:28] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:15:29] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Suspicious Process Execution | Process
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Brute Force Attempt | Security
+[SKIPPED] Duplicate alert for Privileged Access Detected | Security
+[INFO] SOAR processing complete.
+[2025-04-23 03:15:29] ✅ Finished soar_rules.py
+[2025-04-23 03:15:29] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:16:29] ⏱️ Timeout reached for log_analysis.py. Terminated.
+[2025-04-23 03:16:29] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:16:32] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:16:32] ✅ Finished visualization.py
+[2025-04-23 03:16:32] ✅ Pipeline complete in 185.42s.
+
+[2025-04-23 03:40:09] 🚀 Launching SentriSIEM full pipeline (with time limits)...
+[2025-04-23 03:40:09] 🚀 Running collect_device_logs.py (timeout 60s)...
+[2025-04-23 03:41:09] ⏱️ Timeout reached for collect_device_logs.py. Terminated.
+[2025-04-23 03:41:09] 🚀 Running capture_network_traffic.py (timeout 60s)...
+[2025-04-23 03:41:10] [ERROR] Traceback (most recent call last):
+  File "C:\Users\omaar\Desktop\Sentri_SIEM\scripts\capture_network_traffic.py", line 4, in <module>
+    from scapy.all import sniff
+ModuleNotFoundError: No module named 'scapy'
+[2025-04-23 03:41:10] ✅ Finished capture_network_traffic.py
+[2025-04-23 03:41:10] 🚀 Running real_time_detection.py (timeout 60s)...
+[2025-04-23 03:42:10] ⏱️ Timeout reached for real_time_detection.py. Terminated.
+[2025-04-23 03:42:10] 🚀 Running soar_rules.py (timeout 60s)...
+[2025-04-23 03:42:17] [OUTPUT] [INFO] Running SOAR playbooks...
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Suspicious Process Execution | Severity: Medium | Source: Process
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Privileged Access Detected | Severity: Medium | Source: Security
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[ALERT] Brute Force Attempt | Severity: High | Source: Security
+[EMAIL] Sent: Brute Force Attempt
+[INFO] SOAR processing complete.
+[2025-04-23 03:42:17] ✅ Finished soar_rules.py
+[2025-04-23 03:42:17] 🚀 Running log_analysis.py (timeout 60s)...
+[2025-04-23 03:42:20] [OUTPUT] [INFO] Starting anomaly analysis...
+[INFO] Analyzing 369 log entries...
+
+[DETECTED] Anomalies preview:
+               timestamp  event_id severity                    message
+25   2025-04-23 01:50:46      4672   Medium  Privileged access granted
+43   2025-04-23 02:05:14      4672   Medium  Privileged access granted
+46   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+47   2025-04-23 02:05:24      4672   Medium  Privileged access granted
+49   2025-04-23 02:05:29      4672   Medium  Privileged access granted
+..                   ...       ...      ...                        ...
+345  2025-04-23 03:14:28      4672   Medium  Privileged access granted
+348  2025-04-23 03:14:43      4672   Medium  Privileged access granted
+351  2025-04-23 03:14:58      4672   Medium  Privileged access granted
+358  2025-04-23 03:41:15      4672   Medium  Privileged access granted
+363  2025-04-23 03:41:40      4672   Medium  Privileged access granted
+
+[61 rows x 4 columns]
+[INFO] 61 anomalies saved to database.
+[INFO] Done.
+[2025-04-23 03:42:20] ✅ Finished log_analysis.py
+[2025-04-23 03:42:20] 🚀 Running visualization.py (timeout 60s)...
+[2025-04-23 03:42:23] [OUTPUT] [INFO] Generating visualizations and exporting anomalies...
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\failed_logins_heatmap.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\severity_pie_chart.png
+[SAVED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomaly_severity_chart.png
+[EXPORTED] C:\Users\omaar\Desktop\Sentri_SIEM\dashboard\static\visualizations\anomalies_export.csv
+[INFO] All tasks completed.
+[2025-04-23 03:42:23] ✅ Finished visualization.py
+[2025-04-23 03:42:23] ✅ Pipeline complete in 134.36s.
+

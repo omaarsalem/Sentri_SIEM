@@ -1,0 +1,17 @@
+# 1. Clone the repo
+git clone https://github.com/omaarsalem/Sentri_SIEM.git
+cd Sentri_SIEM
+
+# 2. Create virtual environment
+python -m venv sentri_env
+source sentri_env/bin/activate  # Or use .\sentri_env\Scripts\activate on Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Initialize the database and admin
+python database/create_admin.py
+
+# 5. Start the Flask app
+cd dashboard
+python app.py

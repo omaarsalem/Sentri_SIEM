@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}Reports | SentriSIEM{% endblock %}
+
+{% block content %}
+<h2>📊 Anomaly & Log Reports</h2>
+
+<form method="get" class="filter-form">
+    <input type="text" name="keyword" placeholder="Keyword" value="{{ request.args.get('keyword', '') }}">
+    <select name="severity">
+        <option value="">Severity</option>
+        <option value="Critical" {% if request.args.get('severity') == 'Critical' %}selected{% endif %}>Critical</option>
+        <option value="High" {% if request.args.get('severity') == 'High' %}selected{% endif %}>High</option>
+        <option value="Medium" {% if request.args.get('severity') == 'Medium' %}selected{% endif %}>Medium</option>
+        <option value="Low" {% if request.args.get('severity') == 'Low' %}selected{% endif %}>Low</option>
+        <option value="Info" {% if request.args.get('severity') == 'Info' %}selected{% endif %}>Info</option>
+    </select>
+    <input type="date" name="from" value="{{ request.args.get('from', '') }}">
+    <input type="date" name="to" value="{{ request.args.get('to', '') }}">
+    <button type="submit">🔍 Filter</button>
+</form>
+
+<h3>Network Traffic</h3>
+<div class="charts-container">
+    <div class="chart">
+        <h3>Top Talkers</h3>
+        <img src="/static/visualizations/top_talkers.png" alt="Top Talkers">
+    </div>
+    <div class="chart">
+        <h3>Protocol Distribution</h3>
+        <img src="/static/visualizations/protocol_distribution.png" alt="Protocol Pie">
+    </div>
+    <div class="chart">
+        <h3>Bandwidth Over Time</h3>
+        <img src="/static/visualizations/bandwidth_over_time.png" alt="Bandwidth Chart">
+    </div>
+</div>
+
+<h3>Anomalies</h3>
+<div class="table-container">
+<table class="compact-table" id="anomalies-table">
+    <thead>
+        <tr>
+            <th>Timestamp</th>
+            <th>Event ID</th>
+            <th>Severity</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if anomalies %}
+            {% for a in anomalies %}
+            <tr>
+                <td>{{ a.timestamp }}</td>
+                <td>{{ a.event_id }}</td>
+                <td>{{ a.severity }}</td>
+                <td>{{ a.message }}</td>
+            </tr>
+            {% endfor %}
+        {% else %}
+            <tr><td colspan="4" style="text-align:center;">No anomalies found.</td></tr>
+        {% endif %}
+    </tbody>
+</table>
+</div>
+
+<h3>General Logs</h3>
+<div class="table-container">
+<table class="compact-table" id="logs-table">
+    <thead>
+        <tr>
+            <th>Timestamp</th>
+            <th>Event ID</th>
+            <th>Severity</th>
+            <th>Source</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if logs %}
+            {% for log in logs %}
+            <tr>
+                <td>{{ log.timestamp }}</td>
+                <td>{{ log.event_id }}</td>
+                <td>{{ log.severity }}</td>
+                <td>{{ log.source }}</td>
+                <td>{{ log.message }}</td>
+            </tr>
+            {% endfor %}
+        {% else %}
+            <tr><td colspan="5" style="text-align:center;">No logs found.</td></tr>
+        {% endif %}
+    </tbody>
+</table>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/export/anomalies/csv" class="btn">📄 Download Anomalies CSV</a>
+    <a href="/export/logs/csv" class="btn">📄 Download Logs CSV</a>
+</div>
+
+<style>
+    .filter-form {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+        align-items: center;
+    }
+    .filter-form input, .filter-form select, .filter-form button {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .table-container {
+        overflow-x: auto;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    .compact-table {
+        width: 100%;
+        font-size: 0.85rem;
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+    }
+    th, td {
+        border: 1px solid #444;
+        padding: 6px 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #222;
+        color: #ff4d4d;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    tr:nth-child(even) {
+        background-color: #1a1a1a;
+    }
+    .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 0 5px;
+        background-color: #ff4d4d;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .charts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .chart {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+    }
+    .chart img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+</style>
+{% endblock %}

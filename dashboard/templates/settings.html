@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}User Management | SentriSIEM{% endblock %}
+
+{% block content %}
+<h2>User Management</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user['username'] }}</td>
+            <td>{{ user['role'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Add New User</h3>
+<form action="/add-user" method="post">
+    {{ csrf_token() }}
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <select name="role" required>
+        <option value="Viewer">Viewer</option>
+        <option value="Admin">Admin</option>
+    </select>
+    <button type="submit">Add User</button>
+</form>
+{% endblock %}

@@ -1,0 +1,309 @@
+Real-time detection log initialized.
+[2025-04-20 21:41:40] 🔍 Starting real-time detection scan
+[2025-04-20 21:41:40] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-20 21:41:40] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:40] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:45] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-20 21:41:45] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:45] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:50] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-20 21:41:50] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:50] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:55] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-20 21:41:55] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-20 21:41:55] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:33] 🔍 Starting real-time detection scan
+[2025-04-23 01:17:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:33] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:34] 🔍 Starting real-time detection scan
+[2025-04-23 01:17:34] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:34] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:34] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:38] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:38] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:38] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:39] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:39] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:39] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:43] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:43] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:43] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:44] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:44] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:44] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:48] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:49] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:49] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:49] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:53] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:54] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:54] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:54] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:58] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:59] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:17:59] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:17:59] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:03] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:04] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:04] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:04] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:08] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:09] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:09] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:09] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:13] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:14] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:14] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:14] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:18] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:19] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:19] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:19] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:23] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:18:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:23] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:24] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:24] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:18:24] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:24] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:28] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:18:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:28] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:29] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:18:29] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:18:29] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:18:29] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:28] 🔍 Starting real-time detection scan
+[2025-04-23 01:23:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:28] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:33] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:38] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:38] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:38] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:43] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:43] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:43] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:48] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:53] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:23:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:23:58] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:24:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:03] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:24:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:08] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:24:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:13] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:24:18] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:24:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:18] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:24:23] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:24:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:23] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:24:28] ✅ Real-time detection finished.
+[2025-04-23 01:28:48] 🔍 Starting real-time detection scan
+[2025-04-23 01:28:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:28:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:28:48] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:28:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:28:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:28:53] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:28:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:28:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:28:58] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:03] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:08] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:13] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:18] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:23] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:28] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:34] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:34] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:39] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:39] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:29:39] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:39] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:44] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:29:44] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:29:44] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:44] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:29:49] ✅ Real-time detection finished.
+[2025-04-23 01:31:23] 🔍 Starting real-time detection scan
+[2025-04-23 01:31:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:23] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:23] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:28] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:28] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:33] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:33] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:38] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:38] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:38] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:43] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:43] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:43] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:48] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:48] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:53] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:53] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:31:58] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:31:58] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:32:03] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:03] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:32:08] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:08] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:32:13] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:32:13] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:13] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:32:18] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:32:18] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:18] [MISSING] C:\Users\omaar\Desktop\Sentri_SIEM\collected_logs\exported_logs.txt
+[2025-04-23 01:32:23] ✅ Real-time detection finished.
+[2025-04-23 01:39:41] 🔍 Starting real-time detection scan
+[2025-04-23 01:39:41] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:39:46] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:39:51] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:39:56] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:01] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:06] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:11] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:16] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:21] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:26] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:32] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:32] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:40:37] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:40:37] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:40:42] ✅ Real-time detection finished.
+[2025-04-23 01:44:39] 🔍 Starting real-time detection scan
+[2025-04-23 01:44:39] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:44:44] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:44:49] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:44:54] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:44:59] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:04] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:09] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:14] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:19] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:24] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:29] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:29] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:45:34] [CHECK] C:\Users\omaar\Desktop\Sentri_SIEM\logs\sentrisem_logs.json
+[2025-04-23 01:45:34] [ALERT] High frequency detected: Event ID 4625
+[2025-04-23 01:45:39] ✅ Real-time detection finished.
+[2025-04-23 01:50:41] 🔍 Starting real-time detection scan
+[2025-04-23 01:51:41] ✅ Real-time detection finished.
+[2025-04-23 02:04:59] 🔍 Starting real-time detection scan
+[2025-04-23 02:04:59] 🔍 Starting real-time detection scan
+[2025-04-23 02:17:02] 🔍 Starting real-time detection scan
+[2025-04-23 02:17:03] 🔍 Starting real-time detection scan
+[2025-04-23 02:18:39] 🔍 Starting real-time detection scan
+[2025-04-23 02:18:49] 🔍 Starting real-time detection scan
+[2025-04-23 02:19:40] ✅ Real-time detection finished.
+[2025-04-23 02:23:51] 🔍 Starting real-time detection scan
+[2025-04-23 02:24:06] 🔍 Starting real-time detection scan
+[2025-04-23 02:26:51] 🔍 Starting real-time detection scan
+[2025-04-23 02:26:53] 🔍 Starting real-time detection scan
+[2025-04-23 02:27:17] 🔍 Starting real-time detection scan
+[2025-04-23 02:27:21] 🔍 Starting real-time detection scan
+[2025-04-23 02:27:39] 🔍 Starting real-time detection scan
+[2025-04-23 02:27:45] 🔍 Starting real-time detection scan
+[2025-04-23 02:51:09] 🔍 Starting real-time detection scan
+[2025-04-23 02:51:09] 🔍 Starting real-time detection scan
+[2025-04-23 02:51:19] 🔍 Starting real-time detection scan
+[2025-04-23 02:52:14] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:53:43] 🔍 Starting real-time detection scan
+[2025-04-23 02:53:46] 🔍 Starting real-time detection scan
+[2025-04-23 02:54:14] 🔍 Starting real-time detection scan
+[2025-04-23 02:54:46] 🔍 Starting real-time detection scan
+[2025-04-23 02:54:48] 🔍 Starting real-time detection scan
+[2025-04-23 02:54:50] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:54:52] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:54:54] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:00] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:03] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:05] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:11] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:13] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:14] 🔍 Starting real-time detection scan
+[2025-04-23 02:55:15] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:20] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:21] 🔍 Starting real-time detection scan
+[2025-04-23 02:55:24] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:26] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:27] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:30] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:32] 🔍 Starting real-time detection scan
+[2025-04-23 02:55:35] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:37] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:37] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:38] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:41] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:47] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:52] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:54] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:55:54] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:56:03] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:56:05] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:56:05] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:56:13] [ERROR] Failed to process log: database is locked
+[2025-04-23 02:56:25] [ERROR] Failed to process log: database is locked
+[2025-04-23 03:04:01] 🔍 Starting real-time detection scan
+[2025-04-23 03:04:10] 🔍 Starting real-time detection scan
+[2025-04-23 03:10:14] 🔍 Starting real-time detection scan
+[2025-04-23 03:10:18] 🔍 Starting real-time detection scan
+[2025-04-23 03:10:24] 🔍 Starting real-time detection scan
+[2025-04-23 03:13:10] 🔍 Starting real-time detection scan
+[2025-04-23 03:14:28] 🔍 Starting real-time detection scan
+[2025-04-23 03:41:10] 🔍 Starting real-time detection scan
